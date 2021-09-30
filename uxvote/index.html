@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UxVote</title>
     <script>
-        function refreshAt(y, m){
+        function refreshAt(){
             var now = new Date;
-            if (now.getFullYear == y){
-                if(now.getMonth >= m){
-                    location.href='https://kumuthu-vinsura.github.io/uxvote/launched/'
+            if(now.getFullYear()==2021){
+                if(now.getMonth()>=9){
+                    location.href='https://kumuthu-vinsura.github.io/uxvote/launched/';
                 }else{
-                    location.href='https://kumuthu-vinsura.github.io/uxvote/coming-soon/'
+                    location.href='https://kumuthu-vinsura.github.io/uxvote/coming-soon/';
                 }
-            }else if(now.getFullYear > y){
-                location.href='https://kumuthu-vinsura.github.io/uxvote/launched/'
-            }else{
-                location.href='https://kumuthu-vinsura.github.io/uxvote/coming-soon/'
+            } else if (now.getFullYear()>2021){
+                location.href='https://kumuthu-vinsura.github.io/uxvote/launched/';
             }
         }
-        refreshAt(2021,9);
+        refreshAt();
     </script>
 </head>
 <body>
