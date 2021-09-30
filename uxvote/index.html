@@ -5,9 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UxVote</title>
-    <meta http-equiv="refresh" content="0; URL=https://kumuthu-vinsura.github.io/uxvote/coming-soon/" />
+    <!--<meta http-equiv="refresh" content="0; URL=https://kumuthu-vinsura.github.io/uxvote/coming-soon/" />-->
+    <script>
+        function refreshAt(y, m){
+            var now = new Date;
+            if (now.getFullYear == y){
+                if(now.getMonth >= m){
+                    location.href='https://kumuthu-vinsura.github.io/uxvote/launched/'
+                }else{
+                    location.href='https://kumuthu-vinsura.github.io/uxvote/coming-soon/'
+                }
+            }else if(now.getFullYear > y){
+                location.href='https://kumuthu-vinsura.github.io/uxvote/launched/'
+            }else{
+                location.href='https://kumuthu-vinsura.github.io/uxvote/coming-soon/'
+            }
+        }
+        refreshAt(2021,9);
+    </script>
 </head>
 <body>
-    
+
 </body>
 </html>
