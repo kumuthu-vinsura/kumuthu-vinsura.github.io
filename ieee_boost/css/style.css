@@ -259,9 +259,10 @@ h6 {
   text-decoration: none;
   display: inline-block;
   color: rgba(202, 206, 221, 0.8);
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
+  font-family: "Bebas Neue", cursive;
+  font-weight: lighter;
+  font-size: 16px;
+  letter-spacing: 5px;
   outline: none;
 }
 
@@ -395,11 +396,14 @@ h6 {
 
 #mobile-nav ul li a {
   color: #fff;
-  font-size: 17px;
+  font-size: 21px;
   overflow: hidden;
   padding: 10px 22px 10px 15px;
   position: relative;
   text-decoration: none;
+  font-family: 'Bebas Neue', cursive; 
+  letter-spacing: 5px;
+  font-weight: lighter;
   width: 100%;
   display: block;
   outline: none;
@@ -1053,28 +1057,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
 }
 
-#contact .form #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
 #contact .form #sendmessage.show,
 #contact .form #errormessage.show,
 #contact .form .show {
   display: block;
-}
-
-#contact .form .validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
 }
 
 #contact .form input,
@@ -1093,10 +1079,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.4s;
   border-radius: 50px;
   cursor: pointer;
-}
-
-#contact .form button[type="submit"]:hover {
-  background: #e0072f;
 }
 
 /*--------------------------------------------------------------
@@ -1234,10 +1216,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   transition: 0.3s;
   cursor: pointer;
-}
-
-#footer .footer-top .footer-newsletter input[type="submit"]:hover {
-  background: #e0072f;
 }
 
 #footer .copyright {
