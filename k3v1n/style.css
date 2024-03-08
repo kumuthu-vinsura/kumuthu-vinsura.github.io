@@ -1,0 +1,131 @@
+body, html {
+    height: 100%; /* Ensure full height */
+    background-color: #181818;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+h1 {
+    font-size: 2.5rem; /* Adjust base size as needed */
+}
+
+h4 {
+    font-size: 1.5rem; /* Adjust base size as needed */
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center;
+    height: 100%; /* Use full height of the viewport */
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.social-links i {
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: #fff; /* Set icon color to white */
+    margin-right: 10px;
+    border: 2px solid #fff; /* Circular border */
+    border-radius: 50%; /* Make the border rounded */
+    width: 40px; /* Set the width of the circle */
+    height: 40px; /* Set the height of the circle */
+    display: inline-flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-links a {
+    color: #fff; /* Ensure the anchor tag inherits white color for FontAwesome icons */
+}
+
+.social-links a:hover i {
+    background-color: #fff; /* Background color on hover */
+    color: #181818; /* Icon color on hover */
+}
+
+
+.name-color {
+    color: rgb(247, 80, 80); /* You can use a specific shade of red if preferred, e.g., #FF0000 */
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); } /* The arm lifts */
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); } /* The arm settles */
+    100% { transform: rotate(0deg); }
+}
+
+.waving-hand {
+    display: inline-block;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%; /* Adjusts the rotation center */
+    font-size: 36px; /* Adjust size as needed */
+}
+
+.cv-download-btn {
+    font-weight: bold;
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Button color */
+    border: 0; /* Remove border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Top & Bottom, Left & Right padding */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.cv-download-btn:hover, .cv-download-btn:focus {
+    background-color: #0056b3; /* Darker shade on hover/focus */
+    color: #fff; /* Keep text color unchanged */
+    text-decoration: none; /* Remove underline effect */
+    transform: translateY(-2px); /* Slight move up effect on hover */
+}
+
+
+@media (max-width: 768px) {
+    body, html {
+       padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller on mobile */
+    }
+
+    h4 {
+        font-size: 1.0rem; /* Smaller on mobile */
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .social-links i {
+        font-size: 16px; /* Smaller icons on mobile */
+        margin: 0 2px; /* Reduce margin between icons */
+        width: 32px; /* Smaller circle */
+        height: 32px; /* Smaller circle */
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px; /* Smaller profile image on mobile */
+    }
+}
+
+
